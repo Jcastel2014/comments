@@ -6,7 +6,7 @@ import (
 )
 
 func (a *applicationDependencies) writeJSON(w http.ResponseWriter,
-	status int, data any, headers http.Header) error {
+	status int, data envelop, headers http.Header) error {
 	jsResponse, err := json.MarshalIndent(data, "", "\t")
 	if err != nil {
 		return err
