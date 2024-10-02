@@ -9,6 +9,8 @@ import (
 	"time"
 )
 
+type envelop map[string]any
+
 const appVersion = "1.0.0"
 
 type serverConfig struct {
